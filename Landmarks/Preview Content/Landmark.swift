@@ -15,4 +15,9 @@ struct Landmark: Hashable, Codable {
     var state: String
     var Description: String
     
+    private var imageName: String
+    
+    var image: Image{
+        Image(imageName)
+    }
 }
